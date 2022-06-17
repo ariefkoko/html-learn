@@ -1,3 +1,116 @@
-p {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --black: #000814;
+  --navy: #001d3d;
+  --blue: #003566;
+  --orange: #ffc300;
+  --yellow: #ffd60a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+/* navbar */
+
+nav {
+  background-color: var(--navy);
+  padding: 1.5rem;
+  justify-content: flex-end;
+  /* top: 0; */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-left: 2rem;
+  color: whitesmoke;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--black);
+  justify-content: flex-end;
+  /* bottom: 0; */
+}
+
+footer section {
+  margin: auto;
+  color: whitesmoke;
+}
+
+footer ul {
+  align-items: center;
+  position: absolute;
+  list-style: none;
+  /* margin-right: 1rem; */
+}
+
+footer li {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--yellow);
+  margin-left: 1rem;
+  border-radius: 9999px;
+}
+
+footer li:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
+  cursor: pointer;
+}
+
+/* main */
+
+/* body {
+  min-height: 100vh;
+} */
+
+main {
+  background-color: var(--navy);
+  padding: 9rem 15rem;
+  min-height: 100vh;
+}
+
+/* profile */
+
+.profile {
+  margin: auto;
+  color: whitesmoke;
+}
+
+.profile h1 {
+  color: var(--yellow);
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.profile p {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.profile-img {
+  background-color: var(--orange);
 }
